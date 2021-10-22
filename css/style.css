@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+  }
+ 
+body{
+    width: 100%;
+    background: rgba(00, 00, 00, 1);
+}
+header{
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header a{
+    z-index: 10;
+    width: 100%;
+
+}
+header nav{
+    display: flex;
+    width: 100%;
+    padding: 2% 2%;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+
+  }
+header .nav-links{
+padding: 10px;
+}
+header .nav-links ul{
+    display: flex;
+    flex-direction: row;
+    padding-left: 20rem;
+}
+header .nav-links ul li{
+    list-style: none;
+    padding: 1rem 1rem;
+}
+header .nav-links ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 20px;
+}
+.active{
+    background: #ff6666;
+    color: #ffffff;
+}
+header .nav-links ul li a:hover{
+    background: #ff6666;
+    color: #ffffff;
+    transition: 0.5s;
+}
+.para{
+    position:relative;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.para img{
+    position: absolute;
+    align-items: center;
+    top: 0;
+    left:0;
+    width: 100%;
+}
+.para h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    color: #fff;
+    font-size: 3vw;
+    font-weight: 300;
+    top: 0;
+    margin-top: 25vw;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9;
+}
+
+.portfolio{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding-top: 300px;
+    padding-bottom: 100px;
+  }
+  .portfolio h1{
+    padding: 0px;
+    font-size: 75px;
+    color: #fff;
+  }
+  
+  .portfolio p{
+    padding: 30px;
+    font-size: 35px;
+  }
+  
+  .row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .port-col{
+    flex-basis: 22%;
+    margin-bottom: 30px;
+    border-radius: 30px;
+    position: relative;
+    overflow: hidden;
+  
+  }
+  
+  .port-col img{
+    width: 100%;
+    display: block;
+  }
+  .layer{
+    background: rgba(255, 102, 102, 0);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    transition: 0.5s;
+  
+  }
+  .layer:hover{
+    background: rgba(255, 102, 102, 0.5);
+  }
+  .layer h3{
+    color: #fff;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+  }
+  .layer:hover h3{
+    bottom: 20%;
+    opacity: 1;
+  }
+  .layer p{
+    color: #fff;
+    bottom: -10%;
+    left: 50%;
+    font-size: 14px;
+    transform: translateX(-50%);
+    padding: 0px;
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+  }
+  .layer:hover p{
+    bottom: 13%;
+    opacity: 1;
+  }
+  @media(max-width:850px) {
+    nav img{
+      width: 200px;
+      padding-left: 0px;
+      padding-top: 30px;
+      align-items: center;
+    }
+    .text-box h1{
+      font-size: 40px;
+    }
+    .text-box p{
+      font-size: 20px;
+    }
+    .nav-links ul li{
+      display: block;
+  
+    }
+    .nav-links ul li a:hover{
+      color: #000033;
+  
+    }
+    .nav-links{
+      position: absolute;
+      background: #ff6666;
+      height: 100vh;
+      width: 200px;
+      top: 0;
+      right: -230px;
+      text-align: left;
+      z-index: 2;
+      transition: 1s;
+    }
+    nav .fa{
+      display: block;
+      color: #fff;
+      margin: 10px;
+      font-size: 22px;
+      cursor: pointer;
+    }
+.para h1{
+    font-size: 50px;
+    text-align: center;
+    padding:150px;
+}
+    .portfolio{
+        width: 90%;
+        margin: auto;
+        text-align: center;
+        padding-top: 500px;
+        padding-bottom: 25px;
+      }
+      .portfolio h1{
+        padding: 0px;
+        font-size: 25px;
+        color: #fff;
+      }
+      .para{
+        position:relative;
+        align-items: center;
+        width: 100%;
+        height: 20vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .para img{
+        position: absolute;
+        align-items: center;
+        top: 0;
+        left:0;
+        width: 250%;
+        transform: translateX(-50%);
+    }
+    .nav-links ul{
+      padding: 30px;
+    }
+    .row{
+      flex-direction: column;
+    }
+  }
+  
