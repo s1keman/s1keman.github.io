@@ -97,6 +97,7 @@ header .nav-links ul li a:hover{
     text-align: center;
     padding-top: 300px;
     padding-bottom: 100px;
+    z-index: 10;
   }
   .portfolio h1{
     padding: 0px;
@@ -173,7 +174,6 @@ header .nav-links ul li a:hover{
       width: 200px;
       padding-left: 0px;
       padding-top: 30px;
-      align-items: center;
     }
     .text-box h1{
       font-size: 40px;
