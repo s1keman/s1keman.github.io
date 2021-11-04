@@ -356,13 +356,12 @@ z-index: 10;}
     }
    
     .nav-item {
-        margin: 0rem 0;
+        margin: 0 0;
         align-content: top;
         opacity: 100%;
         color: white;
     }
     .nav-link{
-      padding-top: 10em;
         font-size: 5vw;
     }
     .bar {
@@ -375,7 +374,9 @@ z-index: 10;}
       background-color: #fff;
   }
     .hamburger {
-        display: block;
+      position: fixed;
+      right: 3vw;        
+      display: block;
         cursor: pointer;
         z-index: 20;
     }

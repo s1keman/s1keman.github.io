@@ -108,7 +108,16 @@ function mobileMenu() {
     navbox.classList.toggle("active");
 }
 
+const navLink = document.querySelectorAll(".nav-link");
 
+navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+function closeMenu() {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+    navbox.classList.remove("active");
+
+}
 
     let moon = document.getElementById("moon");
     let mo3 = document.getElementById('mo3');
