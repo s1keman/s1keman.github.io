@@ -175,6 +175,8 @@ z-index: 10;}
     color: #ff6666;
   }
   
+  
+  
   .portfolio p{
     padding: 0px;
     font-size: 35px;
@@ -245,6 +247,33 @@ z-index: 10;}
    
   }
 
+  .services{
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    padding-top: 10vh;
+    padding-bottom: 0;
+    z-index: 10;
+  }
+  .contact{
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    padding-top: 10vh;
+    padding-bottom: 0;
+    z-index: 10;
+  }
+  .services h1{
+    padding: 0px;
+    font-size: 75px;
+    color: #ffffff;
+  }
+  .contact h1{
+    padding: 0px;
+    font-size: 75px;
+    color: #ffffff;
+  }
+ 
   @media only screen and (max-width: 800px) {
 
     .logo img{
