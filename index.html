@@ -4,142 +4,195 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-<script src="https://kit.fontawesome.com/3fa9b62d35.js" crossorigin="anonymous"></script>
-
-    <title>design</title>
+    <script src="https://kit.fontawesome.com/3fa9b62d35.js" crossorigin="anonymous"></script>
+    <script src="js/app2.js"></script>
 </head>
 <body>
-    <header>
-       <nav>
-        <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
-        <div class="nav-links">
-            <div class="nav-box">
-              <ul class="nav-menu">
-                <li class="nav-item"><a class="nav-link" href="#home">home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#portfolio">projects</a></li>
-                <li class="nav-item"><a class="nav-link" href="#services">services</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">contact</a></li>
-            </ul>
+    <div class="floating" id="ex1">
+        <img src="img/logorotated.svg" alt="" id="ex1-layer">
+    </div>
+    <div class="toplight">
+    </div>
+    <div class="hero" >
+        
+        
+        <div class="nav-container">
+            <header>
+                <div class="logo">
+                <a href="index.html" class="logo-img"><img src="img/logo.svg" alt=""></a>
+                <a href="index.html" class="logo-text">marutah</a>
+                </div>
+            </header>
+        </div>
+
+        <div class="menu-icon">
+            <input class="menu-icon__cheeckbox" type="checkbox" />
+            <div>
+                <span></span>
+                <span></span>
             </div>
         </div>
-      </div>
-      <div class="hamburger">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-    </div>
-    </div>
-       </nav>
-    </header>
-    <section class="para" id="home">
-        <img src="img/Parallax/IMG_1797.PNG" id="back" alt="">
-        <img src="img/Parallax/IMG_1792.PNG" id="backstar" alt="">
-        <img src="img/Parallax/IMG_1799.PNG" id="moon" alt="">
-        <img src="img/Parallax/IMG_1793.PNG" id="mo1" alt="">
-        <div class="subsection" id="subtitle">
-          <h1 >design. motion. story.</h1>
-          <div class="cta-btn">
-            <a  href="#contact">let's create!</a>
-          </div>
-        </div>
-        <img src="img/Parallax/IMG_1794.PNG" id="mo2" alt="">
-        <img src="img/Parallax/IMG_1795.PNG" id="mo3" alt="">
-        <img src="img/Parallax/IMG_1801.PNG" id="blackgrad" alt="">
 
-    </section>
-    <section class="portfolio" id="portfolio">
-        <div class="row">
-          <div class="port-col">
-            <img src="img/port1.PNG" alt="">
-            <a href="https://kingsofage.podbean.com/"><div class="layer">
-              <h3>kings of age</h3>
-              <p>game podcast</p>
-            </div> </a>
-          </div>
-          <div class="port-col">
-            <img src="img/port2.PNG" alt="">
-            <a href="https://www.twitch.tv/p_a_r_t_s"><div class="layer">
-              <h3>parts</h3>
-              <p>stream branding</p>
-            </div></a>
-          </div>
-          <div class="port-col">
-            <img src="img/port3.PNG" alt="">
-            <a href="https://www.twitch.tv/clatchit"><div class="layer">
-              <h3>clatchit</h3>
-              <p>stream branding</p>
-      
-            </div></a>
-          </div>
-          <div class="port-col">
-            <img src="img/port4.PNG" alt="">
-            <a href="https://www.twitch.tv/boxersaint"><div class="layer">
-              <h3>boxersaint</h3>
-              <p>stream branding</p>
-      
-            </div></a>
-          </div>
+        <h1 class="hero-heading">
+           Design. Motion. Story.
+        </h1>
+        <p class="hero-subheading">
+          we transform your ideas into sophisticated design that expresses your brand story.  
+        </p>
+        <div class="light">
         </div>
-      </section>
-      <section class="services" id="services">
-        <h1 class="serv-h">services</h1>
-        <div class="service-item">
+       <div class="hero-btns">
+        <div class="hero-btn">
+            <div class="inner-herobtn">
+            </div>
+            <button><a href="#contact"><h2 class="btntext">get started!</h2></a></button>
 
         </div>
-      </section>
-      <section class="contact" id="contact">
-        <h1 class="contact-h">contact</h1>
-        <div class="service-item">
-
-        </div>
-      </section>
-<script>
-const hamburger = document.querySelector(".hamburger");
-const navMenu = document.querySelector(".nav-menu");
-const navbox = document.querySelector(".nav-box");
-
-hamburger.addEventListener("click", mobileMenu);
-
-function mobileMenu() {
-    hamburger.classList.toggle("active");
-    navMenu.classList.toggle("active");
-    navbox.classList.toggle("active");
-}
-
-const navLink = document.querySelectorAll(".nav-link");
-
-navLink.forEach(n => n.addEventListener("click", closeMenu));
-
-function closeMenu() {
-    hamburger.classList.remove("active");
-    navMenu.classList.remove("active");
-    navbox.classList.remove("active");
-
-}
-
-    let moon = document.getElementById("moon");
-    let mo3 = document.getElementById('mo3');
-    let mo2 = document.getElementById('mo2');
-    let mo1 = document.getElementById('mo1');
-    let subtitle = document.getElementById('subtitle');
-    s = subtitle.style.top;
-    window.addEventListener('scroll',function(){
-        let value=window.scrollY;
-        console.log(s);
-        moon.style.top= -value/5 +'px';
-        moon.style.right= -200*value +'px';
-        mo1.style.top=0.5*value +'px';
-        mo2.style.top=0.25*value +'px';
-        mo3.style.top=0.05*value +'px';
-        subtitle.style.opacity=1-value/500;
-        subtitle.style.top= -value+'px';
-    
+        <a href="#portfolio" class="eye"><i class="fa fa-eye"></i>
+        </a>
+       </div>
         
-    })
- 
-</script>
+    </div>
+
+    <div class="nav-wrapper" id="nav-wrapper">
+            
+        <div class="menus" id="menu-text">
+            <ul class="menu">
+                <li class="menu-title"><h3>sitemap</h3></li>
+                <li><a href="">home</a></li>
+                <li><a href="">portfolio</a></li>
+                <li><a href="">contact</a></li>
+                <li><a href="">about</a></li>
+            </ul>
+            <ul class="socials">
+                <li class="menu-title"><h3>socials</h3></li>   
+                <li><a href="">instagram</a></li>
+                <li><a href="">twitter</a></li>
+                <li><a href="">facebook</a></li>
+            </ul>
+            <ul class="mailmenu">
+                <li class="menu-title"><h3>get in touch</h3></li>   
+                <li><a href="">s1k3m4n@gmail.com</a></li>
+               
+            </ul>
+        </div>
+    </div>
+
+<section class="portfolio" id="portfolio">
+   <div class="port-content">
+    <div class="port-text">
+        <h1 class="port-text1">
+            Branding
+        </h1>
+        <h1 class="port-text2">
+            thatwards.ca
+        </h1>
+        <p class="port-des">
+            thatwards is a consultancy firm specializing in full-suite strategic marketing, from distilling a big vision into an executable strategy to creating suave content for targeted audiences.
+        </p>
+    </div>
+    <div class="port-img">
+        <div class="port-img1"><img src="img/thatwards1.png" alt=""></div>
+        <div class="port-img2"><img src="img/thatwards2.png" alt=""></div>
+    </div>
+   </div>
+
+   <div class="port-content">
+    <div class="port-text">
+        <h1 class="port-text1">
+            Branding & Animation
+        </h1>
+        <h1 class="port-text2">
+            Kings League
+        </h1>
+        <p class="port-des">
+            thatwards is a consultancy firm specializing in full-suite strategic marketing, from distilling a big vision into an executable strategy to creating suave content for targeted audiences.
+        </p>
+    </div>
+    <div class="port-img">
+        <div class="port-img1"><img src="img/kl1.png" alt=""></div>
+        <div class="port-img2 kl2"><video id="kl2" autoplay muted loop src="img/kl2.webm" type="video/webm"></video></div>
+    </div>
+   </div>
+
+
+
+   <div class="port-content">
+    <div class="port-text">
+        <h1 class="port-text1">
+            Stream branding
+        </h1>
+        <h1 class="port-text2">
+            JRGoesBoom
+        </h1>
+        <p class="port-des">
+            thatwards is a consultancy firm specializing in full-suite strategic marketing, from distilling a big vision into an executable strategy to creating suave content for targeted audiences.
+        </p>
+    </div>
+    <div class="port-img">
+        <div class="port-img1"><video autoplay muted loop src="img/jr1.webm" type="video/webm"></video></div>
+        <div class="port-img2"><img src="img/jr2.png" alt=""></div>
+    </div>
+   </div>
+</section>
+
+<section class="contact-form" id="contact">
+    <h1>let us know your requirements!</h1>
+    <div class="form-wrapper">
+        <input type="text" id="name" name="name" placeholder="your name">
+    <input type="text" id="email" name="email" placeholder="your email">
+    <h2 class="form-text">what can we help you with?</h2>
+    <div class="checks">
+        <div class="article">
+            <input type="checkbox" id="feature1"/>
+            <div>
+              <span>
+                <p>brand</p>
+              </span>
+            </div>
+        </div>
+          
+          <div class="article">
+            <input type="checkbox" id="feature2"/>
+            <div>
+              <span>
+                <p>animation</p>
+              </span>
+            </div>
+        </div>
+          
+          <div class="article">
+            <input type="checkbox" id="feature3"/>
+            <div>
+              <span>
+                <p>banners</p>
+              </span>
+            </div>
+        </div>
+          
+          <div class="article">
+            <input type="checkbox" id="feature4" checked/>
+            <div>
+              <span>
+                <p>stream</p>
+              </span>
+            </div>
+        </div>
+    </div>
+
+    <textarea id="subject" name="subject" placeholder="tell us your ideas" style="height:200px"></textarea>
+    <div class="hero-btn">
+        <div class="inner-herobtn">
+        </div>
+        <input type="submit" value="Submit">
+
+    </div>
+    </div>
+      
+</section>
+
 
 </body>
 </html>
