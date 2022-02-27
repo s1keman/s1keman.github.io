@@ -15,6 +15,9 @@ body{
     margin: 0;
     max-width: 100%;
     overflow-x: hidden !important;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 a{
@@ -302,8 +305,8 @@ section{
 
 .menu-icon {
 	position: fixed;
-	width: 0px;
-	height: 0px;
+	width: 10%;
+	height: 0;
     top:10%;
     right: 10%;
     transform:translateY(1.2em) scale(1.5);
@@ -910,8 +913,10 @@ section{
 }
 
 @media only screen and (max-width: 600px) {
-   
-    .logo-img img{
+   .logo-text{
+       display: none;
+   }
+    .logo-img {
         width: 6em;
 
     }
