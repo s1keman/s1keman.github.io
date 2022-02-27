@@ -74,9 +74,8 @@ header{
     background-clip: text;
     -webkit-text-fill-color: transparent;
     z-index: 100;
-
+    margin-top:2em;
 }
-
 .hero-subheading{
     font-size: 1.5em;
     max-width: 45%;
@@ -188,6 +187,16 @@ section{
     margin-right: 10%;
     width: 80%;
 }
+.section-heading{
+    margin-top: 2em;
+    font-size: 3em;
+    font-weight: 400;
+    float: center;
+    text-align: right;
+    max-width: 90%;
+    color: #fff;
+    }
+
 .hero-btn button{
     height: 100%;
     width: 100%;  
@@ -924,7 +933,7 @@ section{
         justify-content: center;
     }
    .hero-heading{
-       font-size: 3.5em;
+       font-size: 3em;
        text-align: center;
    }
    .hero-subheading{

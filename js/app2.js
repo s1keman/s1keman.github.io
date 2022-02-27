@@ -12,7 +12,7 @@ container.addEventListener("mousemove", (e) => {
   //let yAxis = (window.innerHeight / 2 - e.pageY) /k; 
   let xp = card.x;
 let yp = card.y;
-console.log(xp,yp,e.pageX,e.pageY)
+//console.log(xp,yp,e.pageX,e.pageY)
   let xAxis = (xp - e.pageX) / k;
   let yAxis = (yp - e.pageY) /k;
   card.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
@@ -48,13 +48,27 @@ container.addEventListener("mouseleave", (e) => {
 const icnMenu = document.querySelector('.menu-icon');
 const nr = document.querySelector('#nav-wrapper');
 const nrtext = document.querySelector('#menu-text');
+const ml = document.getElementsByClassName('menu-link');
 icnMenu.addEventListener('click', () => {
+  icnMenu.classList.toggle("active");
   	nr.classList.toggle("active-navbg");
     nrtext.classList.toggle("active-navtext");
 
    });
   // console.log(nrtext);
+  console.log(ml);
+
+  for (let i = 0; i < ml.length; i++) {
+    ml[i].addEventListener('click', () => {
+      icnMenu.classList.toggle("active");
+        nr.classList.toggle("active-navbg");
+        nrtext.classList.toggle("active-navtext");
+    
+       });
+  
+  }
 
 
+  
 
 }
