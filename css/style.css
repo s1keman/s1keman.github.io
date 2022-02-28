@@ -8,8 +8,8 @@
 html {
   scroll-behavior: smooth;
   max-width: 100vw;
-  background: -webkit-gradient(linear, left top, left bottom, from(#221733), color-stop(#000000), color-stop(#000000), to(#000000));
-  background: linear-gradient(#221733, #000000, #000000, #000000);
+  background: -webkit-gradient(linear, left bottom, left top, from(#0d0713), color-stop(7%, #221733), color-stop(80%, black), color-stop(93%, #221733), to(#7b559b));
+  background: linear-gradient(0deg, #0d0713 0%, #221733 7%, black 80%, #221733 93%, #7b559b 100%);
 }
 
 body {
