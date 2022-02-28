@@ -6,10 +6,12 @@
 html{
     scroll-behavior: smooth;
     max-width: 100%;
+    background: linear-gradient(#221733,#000000,#000000,#000000);
+
 
 }
 body{
-    background: linear-gradient(#221733,#000000,#000000,#000000);
+    //background: linear-gradient(#221733,#000000,#000000,#000000);
     color: white;
     padding: 0% 0%;
     margin: 0;
@@ -302,7 +304,6 @@ section{
     left: 50%;
     width: 80%;
     transform: translate(-50%,-50%);
-    display: none;
     align-items: flex-start;
     justify-content: space-around;}
 .active-navbg{
