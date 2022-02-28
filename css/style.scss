@@ -262,7 +262,7 @@ section{
     transition: all 0.5s ease-in-out;
     z-index: 20;
 }
-#menu-text{
+.menus{
     position: fixed;
     top: 50%;
     left: 50%;
@@ -300,6 +300,9 @@ section{
 
 
  .active-navtext{
+     display:flex;
+     align-items: flex-start;
+     justify-content: space-around;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -316,7 +319,6 @@ section{
 
 
 }
-
 
 .menu-icon {
 	position: fixed;
@@ -845,6 +847,11 @@ section{
     max-width: 30vw;
     max-height: 40vh;
     
+}
+.active-navtext{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 
