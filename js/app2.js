@@ -53,7 +53,7 @@ icnMenu.addEventListener('click', () => {
   icnMenu.classList.toggle("active");
   	nr.classList.toggle("active-navbg");
     nrtext.classList.toggle("active-navtext");
-
+  nrtext.style.display="flex";
    });
   // console.log(nrtext);
   console.log(ml);
@@ -63,7 +63,8 @@ icnMenu.addEventListener('click', () => {
       icnMenu.classList.toggle("active");
         nr.classList.toggle("active-navbg");
         nrtext.classList.toggle("active-navtext");
-    
+        nrtext.style.display="none";
+
        });
   
   }

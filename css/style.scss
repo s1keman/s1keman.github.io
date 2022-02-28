@@ -262,13 +262,13 @@ section{
     transition: all 0.5s ease-in-out;
     z-index: 20;
 }
-.nav-wrapper .menus{
+#menu-text{
     position: fixed;
     top: 50%;
     left: 50%;
     width: 80%;
     transform: translate(-50%,-50%);
-    display: flex;
+    display: none;
     align-items: flex-start;
     justify-content: space-around;
     
