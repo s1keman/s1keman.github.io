@@ -500,11 +500,11 @@ section {
 }
 
 .portfolio-heading {
-  text-align: center;
+  text-align: left;
 }
 
 .testimonial-heading {
-  text-align: center;
+  text-align: left;
 }
 
 .reviews .testimonials .testimonial-wrapper {
@@ -665,7 +665,7 @@ section {
   background-position: right bottom;
 }
 
-.testimonials .testimonial-wrapper {
+.reviews .testimonials .testimonial-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -679,13 +679,14 @@ section {
           align-items: flex-start;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  margin: 0;
 }
 
-.testimonials .testimonial-wrapper .testimonial-left {
+.reviews .testimonials .testimonial-wrapper .testimonial-left {
   margin-bottom: 1em;
 }
 
-.testimonials .testimonial-wrapper .testimonial-left .testimonial-heading {
+.reviews .testimonials .testimonial-wrapper .testimonial-left .testimonial-heading {
   font-weight: lighter;
   background: white;
   opacity: 1;
@@ -696,7 +697,7 @@ section {
   font-size: 4em;
 }
 
-.testimonials .testimonial-wrapper .testimonial-right {
+.reviews .testimonials .testimonial-wrapper .testimonial-right {
   margin-top: 5em;
   background: -webkit-linear-gradient(0deg, #95D3FF, #d690ff);
   padding: 1em 1em;
@@ -706,10 +707,11 @@ section {
   display: grid;
 }
 
-.testimonials .testimonial-wrapper .testimonial-right .testimonial-right-inner {
+.reviews .testimonials .testimonial-wrapper .testimonial-right .testimonial-right-inner {
   background: #ffffff88;
   padding: 4em 6em;
   background-blend-mode: screen;
+  opacity: 0.5;
   border-radius: 2em;
   -ms-grid-row: 1;
       grid-row-start: 1;
@@ -719,7 +721,7 @@ section {
           filter: blur(1em);
 }
 
-.testimonials .testimonial-wrapper .testimonial-right .testimonial-block {
+.reviews .testimonials .testimonial-wrapper .testimonial-right .testimonial-block {
   padding: 4em 6em;
   -ms-grid-row: 1;
       grid-row-start: 1;
@@ -728,11 +730,11 @@ section {
   z-index: 2;
 }
 
-.testimonials .testimonial-wrapper .testimonial-right .testimonial-block .testimonial-text {
+.reviews .testimonials .testimonial-wrapper .testimonial-right .testimonial-block .testimonial-text {
   font-size: 1.5em;
 }
 
-.testimonials .testimonial-wrapper .testimonial-right .testimonial-block .testimonial-info {
+.reviews .testimonials .testimonial-wrapper .testimonial-right .testimonial-block .testimonial-info {
   text-align: right;
 }
 
@@ -1261,6 +1263,8 @@ section {
     margin-top: 10em;
   }
   .portfolio-heading {
+    margin: auto;
+    text-align: center;
     padding-bottom: 1em;
   }
   .port-text {
@@ -1475,6 +1479,13 @@ section {
   .nav-wrapper .menus ul {
     margin: 0.5em;
   }
+  .reviews .testimonials .testimonial-wrapper {
+    margin: auto;
+  }
+  .reviews .testimonials .testimonial-wrapper .testimonial-left .testimonial-heading {
+    margin: auto;
+    text-align: center;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -1654,27 +1665,30 @@ section {
     text-transform: uppercase;
     text-align: center;
   }
-  .testimonials .testimonial-wrapper .testimonial-left .testimonial-heading {
+  .reviews .testimonials .testimonial-wrapper .testimonial-left .testimonial-heading {
     font-size: 2.5em;
   }
-  .testimonials .testimonial-wrapper .testimonial-right {
+  .reviews .testimonials .testimonial-wrapper .testimonial-right {
     width: 100%;
-    margin: 1em;
+    margin-bottom: 0.1em;
     padding: 0;
   }
-  .testimonials .testimonial-wrapper .testimonial-right .testimonial-right-inner {
+  .reviews .testimonials .testimonial-wrapper .testimonial-right .testimonial-right-inner {
     padding: 1em;
+    -webkit-filter: blur(0.5em);
+    filter: blur(0.5em);
+    background-blend-mode: normal;
   }
-  .testimonials .testimonial-wrapper .testimonial-right .testimonial-block {
+  .reviews .testimonials .testimonial-wrapper .testimonial-right .testimonial-block {
     padding: 2em;
   }
-  .testimonials .testimonial-wrapper .testimonial-right .testimonial-block .testimonial-text {
+  .reviews .testimonials .testimonial-wrapper .testimonial-right .testimonial-block .testimonial-text {
     font-size: 0.8em;
   }
-  .testimonials .testimonial-wrapper .testimonial-right .testimonial-block .testimonial-info .testimonial-name {
+  .reviews .testimonials .testimonial-wrapper .testimonial-right .testimonial-block .testimonial-info .testimonial-name {
     font-size: 1em;
   }
-  .testimonials .testimonial-wrapper .testimonial-right .testimonial-block .testimonial-info .testimonial-info {
+  .reviews .testimonials .testimonial-wrapper .testimonial-right .testimonial-block .testimonial-info .testimonial-info {
     font-size: 0.8em;
   }
   .contact-form h1 {
